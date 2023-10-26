@@ -1,0 +1,90 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/csvw", 
+    {
+      "@language": "lv"
+    }
+  ], 
+  "url": "https://data.gov.lv/dati/lv/dataset/40d80be5-0c09-47c4-80f3-fad4bec19f33/resource/17460efb-ae99-4d1d-8144-1068f184b05f/download/meteorologiskie_operativie_dati.csv", 
+  "dialect": {
+    "quoteChar": "\"", 
+    "delimiter": ";", 
+    "encoding": "utf-8"
+  }, 
+  "dc:title": "Nov\u0113rojumu dati", 
+  "dcat:keyword": [
+    "Hidrolo\u0123iskie dati", 
+    "Meteorolo\u0123iskie dati"
+  ], 
+  "dc:publisher": {
+    "schema:name": "Latvijas Vides, \u0123eolo\u0123ijas un meteorolo\u0123ijas centrs", 
+    "schema:url": "https://data.gov.lv/dati/organization/lvgmc"
+  }, 
+  "dc:license": {
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.lv"
+  }, 
+  "dc:issued": {
+    "@value": "2022-10-25", 
+    "@type": "xsd:date"
+  }, 
+  "dc:modified": {
+    "@value": "2022-10-26", 
+    "@type": "xsd:date"
+  }, 
+  "tableSchema": {
+    "columns": [
+      {
+        "name": "STATION_ID", 
+        "titles": "Station_id", 
+        "dc:description": "\u012bsais stacijas nosaukums (identifikators). Stacijas piln\u0101kais apraksts tiek pieejams no saisto\u0161as datu kopas \u201cMeteorolo\u0123isk\u0101s stacijas\u201d (https://data.gov.lv/dati/lv/dataset/noverojumu-stacijas/resource/79e707d8-6719-49b2-92b1-ec261451f1d9). ", 
+        "datatype": {
+          "length": "", 
+          "base": "string"
+        }, 
+        "foreignKeys": [
+          {
+            "reference": {
+              "resource": "https://data.gov.lv/dati/lv/dataset/noverojumu-stacijas/resource/79e707d8-6719-49b2-92b1-ec261451f1d9", 
+              "columnReference": "STATION_ID"
+            }
+          }
+        ]
+      }, 
+      {
+        "name": "ABBREVIATION", 
+        "titles": "Abbreviation", 
+        "dc:description": "\u012bsais parametra nosaukums (identifikators). Parametru piln\u0101kais apraksts tiek pieejams no saisto\u0161as datu kopas \u201cMeteorolo\u0123iskie parametri\u201d (https://data.gov.lv/dati/lv/dataset/noverojumu-parametri/resource/a6c59f47-659d-4a7d-b39a-891519572a51).", 
+        "datatype": {
+          "length": "", 
+          "base": "string"
+        }, 
+        "foreignKeys": [
+          {
+            "reference": {
+              "resource": "https://data.gov.lv/dati/lv/dataset/noverojumu-parametri/resource/a6c59f47-659d-4a7d-b39a-891519572a51", 
+              "columnReference": "ABBREVIATION"
+            }
+          }
+        ]
+      }, 
+      {
+        "name": "DATETIME", 
+        "titles": "Datetime", 
+        "dc:description": "parametra atbilsto\u0161ais m\u0113r\u012bjuma laiks. Visi m\u0113r\u012bjumi tiek re\u0123istr\u0113ti p\u0113c UTC laika. Atbilsto\u0161i datu kopas \u201cMeteorolo\u0123iskie parametri\u201d (https://data.gov.lv/dati/lv/dataset/noverojumu-parametri/resource/a6c59f47-659d-4a7d-b39a-891519572a51) aprakstam jebkur\u0161 parametrs atbilst savam agreg\u0101cijas tipam. Atbilsto\u0161i tam visi parametri iz\u0146emot faktiskos tiek rakst\u012bti uz stundas sakumu, bet faktiskie parametri tiek rakst\u012bti uz stundu beig\u0101m. Piem\u0113ram, ja v\u0113rt\u012bbas tika fiks\u0113tas no 2:00 l\u012bdz 2:59, tad agregetas summas, maksimumi, minimumi un vid\u0113jas v\u0113rt\u012bbas tiks pierakst\u012btas uz 2:00, bet faktiska v\u0113rt\u012bba tika pa\u0146emta par laiku 2:59 un tiks ierakst\u012bta datu b\u0101ze ka 3:00. ", 
+        "datatype": {
+          "length": "", 
+          "base": "date"
+        }
+      }, 
+      {
+        "name": "VALUE", 
+        "titles": "Value", 
+        "dc:description": "parametra v\u0113rt\u012bba uz noteiktu laiku", 
+        "datatype": {
+          "length": "", 
+          "base": "decimal"
+        }
+      }
+    ]
+  }
+}
