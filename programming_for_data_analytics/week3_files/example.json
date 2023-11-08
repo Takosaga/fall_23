@@ -1,0 +1,88 @@
+{
+  "Ventspils": {
+    "population": 33053,
+    "connected_cities": {
+      "Liepaja": 188,
+      "Jelgave": 176,
+      "Jurmala": 154
+    },
+    "distance_to_Daugavpils": 406
+  },
+  "Liepaja": {
+    "population": 67335,
+    "connected_cities": {
+      "Ventspils": 118,
+      "Jelgave": 182,
+      "Jurmala": 192
+    },
+    "distance_to_Daugavpils": 412
+  },
+  "Jurmala": {
+    "population": 50842,
+    "connected_cities": {
+      "Ventspils": 154,
+      "Liepaja": 192,
+      "Jelgava": 45,
+      "Riga": 38
+    },
+    "distance_to_Daugavpils": 275
+  },
+  "Jelgava": {
+    "population": 55384,
+    "connected_cities": {
+      "Ventspils": 174,
+      "Liepaja": 182,
+      "Jurmala": 45,
+      "Riga": 45,
+      "Daugavapils": 230
+    },
+    "distance_to_Daugavpils": 230
+  },
+  "Riga": {
+    "population": 614987,
+    "connected_cities": {
+      "Valmiera": 107,
+      "Jelgave": 45,
+      "Jurmala": 38,
+      "Jekabpils": 140
+    },
+    "distance_to_Daugavpils": 229
+  },
+  "Jekabpils": {
+    "population": 21179,
+    "connected_cities": {
+      "Riga": 140,
+      "Valmiera": 162,
+      "Rezekne": 101,
+      "Daugavpils": 89
+    },
+    "distance_to_Daugavpils": 89
+  },
+  "Valmiera": {
+    "population": 22408,
+    "connected_cities": {
+      "Riga": 107,
+      "Jekabpils": 162,
+      "Rezekne": 1185
+    },
+    "distance_to_Daugavpils": 274
+  },
+  "Rezekne": {
+    "population": 26805,
+    "connected_cities": {
+      "Valmiera": 185,
+      "Jekabpils": 101,
+      "Daugavpils": 89
+    },
+    "distance_to_Daugavpils": 89
+  },
+  "Daugavpils": {
+    "population": 79299,
+    "connected_cities": {
+      "Rezekne": 89,
+      "Jekabpils": 89,
+      "Jelgava": 230
+    },
+    "distance_to_Daugavpils": 0
+  }
+}
