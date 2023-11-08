@@ -75,7 +75,7 @@ def todict(lst:list)->dict:
 
 
 def encoding_json(json_data:dict):
-    with open("week3_files/example.json") as outfile:
+    with open("week3_files/example.json", "w") as outfile:
         outfile.write(json.dumps(json_data, indent=2))
 
 def decoding_json(json_file) -> dict:
@@ -87,4 +87,3 @@ def decoding_json(json_file) -> dict:
 
 if __name__ == "__main__":
     print("Running directely")
-
