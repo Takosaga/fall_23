@@ -41,6 +41,7 @@ To create a database schema that models relationships between states, cities, ho
    - Database designed to support API calls for walk and transit scores.
 
 ---
+![](https://github.com/Takosaga/fall_23/blob/main/modern_database_technologies/ERD.png)
 
 ## 🌟 Results
 - **Implemented Queries**:
@@ -53,3 +54,4 @@ To create a database schema that models relationships between states, cities, ho
   - Future improvements include adjusting latitude/longitude precision and dynamic data updates.
 
 ---
+[Full Report](https://github.com/Takosaga/fall_23/blob/main/modern_database_technologies/Modern%20Database%20Technologies%20(Course%20Project).pdf)
